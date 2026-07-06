@@ -1,0 +1,218 @@
+/* ===== Color palette (shared with navbar) ===== */
+:root {
+  --color-primary: #0B5FAE;      /* Deep Blue */
+  --color-secondary: #4CAF50;    /* Fresh Green */
+  --color-bg: #FFFFFF;           /* White */
+  --color-text: #1F2937;         /* Dark Navy/Gray */
+
+  --color-bg-light: #F5F7FA;     /* Light Gray */
+  --color-border: #E5E7EB;       /* Border Gray */
+  --color-success-bg: #E8F5E9;   /* Success Green */
+  --color-bg-subtle: #F7FBFF;    /* Very Light Blue */
+}
+
+.sf-footer {
+  background: var(--color-bg-light);
+  border-top: 1px solid var(--color-border);
+}
+
+.sf-footer__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 2rem;
+}
+
+.sf-footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .sf-footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+}
+
+/* Brand + newsletter */
+.sf-footer__brand {
+  max-width: 22rem;
+}
+
+.sf-footer__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.sf-footer__logo:hover {
+  transform: scale(1.05);
+}
+
+.sf-footer__tagline {
+  margin: 0.75rem 0 1.5rem;
+  color: #6B7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.sf-newsletter__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.sf-newsletter__row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sf-newsletter__input {
+  flex: 1;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sf-newsletter__input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(11, 95, 174, 0.15);
+}
+
+.sf-newsletter__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.sf-newsletter__btn:hover {
+  background: #094c8b;
+  transform: scale(1.05);
+}
+
+.sf-newsletter__btn:active {
+  transform: scale(0.95);
+}
+
+.sf-newsletter__success {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  background: var(--color-success-bg);
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Link columns */
+.sf-footer__columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  flex: 1;
+}
+
+@media (min-width: 480px) {
+  .sf-footer__columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sf-footer__col-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  margin: 0 0 1rem;
+}
+
+.sf-footer__col-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sf-footer__link {
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+
+.sf-footer__link:hover {
+  color: var(--color-primary);
+  padding-left: 0.25rem;
+}
+
+/* Bottom bar */
+.sf-footer__bottom {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .sf-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.sf-footer__copyright {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #9CA3AF;
+}
+
+.sf-footer__socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.sf-footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.sf-footer__social:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}

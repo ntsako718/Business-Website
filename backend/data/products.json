@@ -1,0 +1,142 @@
+[
+  {
+    "id": "p1",
+    "name": "All-Purpose Cleaner",
+    "tagline": "Multi-surface cleaning spray",
+    "price": 59.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p2",
+    "name": "Dishwashing Liquid",
+    "tagline": "Cuts through grease with ease",
+    "price": 39.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p3",
+    "name": "Laundry Detergent",
+    "tagline": "Powerful stain removal",
+    "price": 129.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p4",
+    "name": "Fabric Softener",
+    "tagline": "Soft and fresh laundry",
+    "price": 89.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p5",
+    "name": "Floor Cleaner",
+    "tagline": "Shiny, streak-free floors",
+    "price": 69.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p6",
+    "name": "Glass Cleaner",
+    "tagline": "Crystal-clear windows",
+    "price": 49.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p7",
+    "name": "Bathroom Cleaner",
+    "tagline": "Removes soap scum and grime",
+    "price": 64.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p8",
+    "name": "Toilet Cleaner",
+    "tagline": "Deep cleaning gel",
+    "price": 44.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p9",
+    "name": "Disinfectant Spray",
+    "tagline": "Kills 99.9% of germs",
+    "price": 79.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p10",
+    "name": "Bleach",
+    "tagline": "Whitening and disinfecting",
+    "price": 34.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p11",
+    "name": "Kitchen Degreaser",
+    "tagline": "Cuts through tough grease",
+    "price": 74.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p12",
+    "name": "Furniture Polish",
+    "tagline": "Restores natural shine",
+    "price": 59.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p13",
+    "name": "Air Freshener",
+    "tagline": "Long-lasting freshness",
+    "price": 49.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p14",
+    "name": "Microfiber Cloths",
+    "tagline": "Reusable cleaning cloths",
+    "price": 99.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p15",
+    "name": "Scrubbing Sponges",
+    "tagline": "Tough on stains",
+    "price": 29.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p16",
+    "name": "Cleaning Gloves",
+    "tagline": "Protect your hands",
+    "price": 39.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p17",
+    "name": "Broom & Dustpan",
+    "tagline": "Everyday sweeping set",
+    "price": 149.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p18",
+    "name": "Mop & Bucket",
+    "tagline": "Complete floor cleaning kit",
+    "price": 249.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p19",
+    "name": "Trash Bags",
+    "tagline": "30-pack household bags",
+    "price": 69.99,
+    "imageUrl": "/images/clean.jpg"
+  },
+  {
+    "id": "p20",
+    "name": "Paper Towels",
+    "tagline": "Highly absorbent rolls",
+    "price": 54.99,
+    "imageUrl": "/images/clean.jpg"
+  }
+]
