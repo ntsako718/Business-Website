@@ -9,171 +9,7 @@
   --color-border: #E5E7EB;       /* Border Gray */
   --color-success-bg: #E8F5E9;   /* Success Green */
   --color-bg-subtle: #F7FBFF;    /* Very Light Blue */
-
-  /* Fresh accent, sits between the blue and green — used for the
-     card's "View" button so it reads as an action, distinct from
-     links (blue) and success/offer states (green). */
-  --color-accent: #0E9E86;
-  --color-accent-hover: #0B8570;
-  --color-accent-soft: #E4F6F2;
-}
-
-.pc-card {
-  position: relative;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  border-radius: 0.75rem;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg);
-  padding: 1.5rem;
-  text-align: center;
-  color: var(--color-text);
-  box-shadow: 0 1px 2px rgba(31, 41, 55, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.pc-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(31, 41, 55, 0.1);
-  border-color: var(--color-primary);
-}
-
-/* Image */
-.pc-card__image-wrap {
-  position: relative;
-  margin-bottom: 1rem;
-  display: flex;
-  height: 10rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-bg-subtle);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.pc-card__image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.pc-card:hover .pc-card__image {
-  transform: scale(1.05);
-}
-
-/* Details */
-.pc-card__details {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pc-card__name {
-  margin: 0;
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--color-text);
-}
-
-.pc-card__tagline {
-  margin: 0;
-  font-size: 0.875rem;
-  color: #6B7280;
-}
-
-/* Pricing */
-.pc-card__pricing {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pc-card__price-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pc-card__price {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.pc-card__coupon-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.pc-card__offer {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 9999px;
-  background: var(--color-success-bg);
-  padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
-}
-
-.pc-card__original-price {
-  color: #9CA3AF;
-  text-decoration: line-through;
-}
-
-.pc-card__offer-text {
-  font-weight: 600;
-  color: var(--color-secondary);
-}
-
-.pc-card__cta {
-  margin-top: 1.25rem;
-  width: 100%;
-}
-
-/* ===== Button (used for the card's "View" action) ===== */
-.button {
-  margin-top: 100;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.625rem 1.25rem;
-  border: none;
-  border-radius: 0.5rem;
-  background: var(--color-accent);
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.button:hover {
-  background: var(--color-accent-hover);
-  box-shadow: 0 6px 16px rgba(14, 158, 134, 0.3);
-}/* ===== Color palette (shared across components) ===== */
-:root {
-  --color-primary: #0B5FAE;      /* Deep Blue */
-  --color-secondary: #4CAF50;    /* Fresh Green */
-  --color-bg: #FFFFFF;           /* White */
-  --color-text: #1F2937;         /* Dark Navy/Gray */
-
-  --color-bg-light: #F5F7FA;     /* Light Gray */
-  --color-border: #E5E7EB;       /* Border Gray */
-  --color-success-bg: #E8F5E9;   /* Success Green */
-  --color-bg-subtle: #F7FBFF;    /* Very Light Blue */
+  --color-bg-cream: #FAF7F2;     /* Warm cream, for product-grid sections */
 
   /* Fresh accent, sits between the blue and green — used for the
      card's "View" button so it reads as an action, distinct from
@@ -304,8 +140,8 @@
 }
 
 .pc-card__cta {
-  margin-top: 1.0rem;
-  width: 50%;
+  margin-top: 1.25rem;
+  width: 100%;
 }
 
 /* ===== Button (used for the card's "View" action) ===== */
@@ -373,45 +209,23 @@
   background: transparent;
 }
 
-.button:active {
-  transform: scale(0.97);
+/* ===== Products grid section ===== */
+.products-section {
+  width: 100%;
+  background: var(--color-bg-cream);
 }
 
-.button:disabled {
-  background: var(--color-border);
-  color: #9CA3AF;
-  cursor: not-allowed;
-  box-shadow: none;
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+
+  list-style: none;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
-/* Text-only / ghost variant */
-.text-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.375rem;
-  padding: 0.5rem 0.75rem;
-  border: none;
-  background: transparent;
-  color: var(--color-accent);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 0.375rem;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.text-button:hover {
-  background: var(--color-accent-soft);
-  color: var(--color-accent-hover);
-}
-
-.text-button:active {
-  transform: scale(0.97);
-}
-
-.text-button:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background: transparent;
+#products li {
+  list-style: none;
 }

@@ -1,14 +1,14 @@
-import { ProductList } from "./Components/ProductList";
+import { ProductGrid } from "./Components/ProductGrid";
 import Footer from "./Layout/Footer";
-import ScrollNavbar from "./Layout/ScrollNavbar";
+import Header from "./Layout/Header";
+import Homepage from "./Pages/Homepage";
 
 function App() {
   return (
     <>
-      <ScrollNavbar/>
+      <Header/>
       <main>
-        <ProductList/>
-        <Footer/>
+        <Homepage/>
       </main>
       
     </>

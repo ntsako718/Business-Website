@@ -1,8 +1,8 @@
 import { useEffect, useState} from "react";
 import ProductCard from "./ProductCard";
-import "./ProductList.css";
+import "./ProductGrid.css";
 
-export function ProductList() {
+export function ProductGrid() {
 const [loadedProducts, setLoadedProducts] = useState([]);
 
 useEffect(() => {
@@ -22,12 +22,13 @@ useEffect(() => {
  getProducts();
 }, []);
 
-  return (
+ return (
+  <section className="products-section">
     <ul id="products">
       {loadedProducts.map((product) => (
         <li key={product.id}>
           <ProductCard
-            imageUrl={product.imageUrl}
+          imageUrl={product.imageUrl}
             name={product.name}
             tagline={product.tagline}
             price={product.price}
@@ -35,5 +36,6 @@ useEffect(() => {
         </li>
       ))}
     </ul>
-  );
+  </section>
+);
 }

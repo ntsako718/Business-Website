@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, Home, Mail, ShoppingCart, Package } from "lucide-react";
-import "./ScrollNavbar.css";
+import "./CSS/Header.css";
 import Button from "../Components/UI/Button";
 
 const defaultMenuItems = [
@@ -10,7 +10,7 @@ const defaultMenuItems = [
   { id: 4, title: "Cart", url: "/cart", icon: <ShoppingCart size={20} /> },
 ];
 
-export default function ScrollNavbar({ menuItems = defaultMenuItems, className = "" }) {
+export default function Header({ menuItems = defaultMenuItems, className = "" }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);

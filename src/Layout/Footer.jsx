@@ -7,7 +7,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-import "./Footer.css";
+import "./CSS/Footer.css";
 
 const defaultColumns = [
   {
