@@ -1,6 +1,6 @@
 import { useEffect, useState} from "react";
 import ProductCard from "./ProductCard";
-import "./ProductGrid.css";
+import "./CSS/ProductGrid.css";
 
 export function ProductGrid() {
 const [loadedProducts, setLoadedProducts] = useState([]);

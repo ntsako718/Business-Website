@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, Home, Mail, ShoppingCart, Package } from "lucide-react";
 import "./CSS/Header.css";
 import Button from "../Components/UI/Button";
+import {useNavigate} from 'react-router-dom'
 
 const defaultMenuItems = [
   { id: 1, title: "Home", url: "/", icon: <Home size={20} /> },
@@ -11,6 +12,8 @@ const defaultMenuItems = [
 ];
 
 export default function Header({ menuItems = defaultMenuItems, className = "" }) {
+  const navigate = useNavigate();
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);

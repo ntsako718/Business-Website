@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductCard.css";
+import "./CSS/ProductCard.css";
 import Button from "./UI/Button";
 
 const API_URL = import.meta.env.VITE_API_URL;
