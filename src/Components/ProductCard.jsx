@@ -1,6 +1,7 @@
 import React from "react";
 import "./CSS/ProductCard.css";
 import Button from "./UI/Button";
+import { useNavigate } from "react-router-dom";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -11,8 +12,12 @@ export default function ProductCard({
   tagline,
   price,
   currency = "R",
+  id,
   ...props
 }) {
+
+  const navigate = useNavigate();
+  
   const formatPrice = (amount) => {
     return new Intl.NumberFormat("en-ZA", {
       style: "currency",
@@ -42,7 +47,7 @@ export default function ProductCard({
       </div>
 
       {/* View Button */}
-       <Button className="pc-card__cta">
+       <Button className="pc-card__cta" onClick = {() => navigate(`/product/${id}`)}>
          View
        </Button>
 

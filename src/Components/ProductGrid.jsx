@@ -1,6 +1,7 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState, useContext, createContext} from "react";
 import ProductCard from "./ProductCard";
 import "./CSS/ProductGrid.css";
+
 
 export function ProductGrid() {
 const [loadedProducts, setLoadedProducts] = useState([]);
@@ -22,6 +23,7 @@ useEffect(() => {
  getProducts();
 }, []);
 
+
  return (
   <section className="products-section">
     <ul id="products">
@@ -32,6 +34,7 @@ useEffect(() => {
             name={product.name}
             tagline={product.tagline}
             price={product.price}
+            id = {product.id}
           />
         </li>
       ))}
