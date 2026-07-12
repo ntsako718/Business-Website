@@ -2,18 +2,21 @@ import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, Home, Mail, ShoppingCart, Package } from "lucide-react";
 import "./CSS/Header.css";
 import Button from "../Components/UI/Button";
-import {useNavigate, Link} from 'react-router-dom'
+import { useNavigate, Link } from "react-router-dom";
+import { useCart } from "../Context/CartContext";
 
 const defaultMenuItems = [
   { id: 1, title: "Home", url: "/", icon: <Home size={20} /> },
   { id: 2, title: "Products", url: "/products", icon: <Package size={20} /> },
   { id: 3, title: "Contact", url: "/contact", icon: <Mail size={20} /> },
-  { id: 4, title: "Cart", url: "/cart", icon: <ShoppingCart size={20} /> },
+  { id: 4, title: "Cart", url: "/cart", icon: <ShoppingCart size={20} />, isCart: true },
 ];
 
 export default function Header({ menuItems = defaultMenuItems, className = "" }) {
   const navigate = useNavigate();
-  
+  const { state } = useCart();
+  const cartCount = state.cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -49,7 +52,6 @@ export default function Header({ menuItems = defaultMenuItems, className = "" })
 
   return (
     <>
-      {/* Full Navbar - visible when not scrolled */}
       <nav className={`sn-navbar ${isScrolled ? "sn-navbar--hidden" : ""} ${className}`}>
         <div className="sn-navbar__inner">
           <div className="sn-navbar__row">
@@ -64,7 +66,14 @@ export default function Header({ menuItems = defaultMenuItems, className = "" })
                   onMouseLeave={() => setHoveredItem(null)}
                 >
                   <Link to={item.url} className="sn-nav-item">
-                    {item.icon}
+                    <span className="sn-nav-item__icon-wrap">
+                      {item.icon}
+                      {item.isCart && cartCount > 0 && (
+                        <span key={cartCount} className="sn-cart-badge">
+                          {cartCount}
+                        </span>
+                      )}
+                    </span>
                     <span>{item.title}</span>
                   </Link>
                   {hoveredItem === item.id && <div className="sn-nav-item-hover" />}
@@ -84,7 +93,6 @@ export default function Header({ menuItems = defaultMenuItems, className = "" })
         </div>
       </nav>
 
-      {/* Floating Hamburger - visible when scrolled */}
       <div className={`sn-fab-wrap ${isScrolled ? "sn-fab-wrap--visible" : ""}`}>
         <Button
           type="button"
@@ -93,10 +101,14 @@ export default function Header({ menuItems = defaultMenuItems, className = "" })
           aria-label="Open menu"
         >
           <Menu size={24} />
+          {cartCount > 0 && (
+            <span key={cartCount} className="sn-cart-badge sn-cart-badge--fab">
+              {cartCount}
+            </span>
+          )}
         </Button>
       </div>
 
-      {/* Floating Menu */}
       {isMenuOpen && (
         <>
           <div
@@ -123,7 +135,14 @@ export default function Header({ menuItems = defaultMenuItems, className = "" })
                     style={{ animationDelay: `${index * 0.06}s` }}
                   >
                     <Link to={item.url} onClick={closeMenu} className="sn-menu-item__link">
-                      <span className="sn-menu-item__icon">{item.icon}</span>
+                      <span className="sn-menu-item__icon">
+                        {item.icon}
+                        {item.isCart && cartCount > 0 && (
+                          <span key={cartCount} className="sn-cart-badge">
+                            {cartCount}
+                          </span>
+                        )}
+                      </span>
                       <span className="sn-menu-item__label">{item.title}</span>
                     </Link>
                   </div>

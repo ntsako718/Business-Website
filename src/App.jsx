@@ -10,7 +10,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className="app-shell">
       <Header />
       <div className="page-content">
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </div>
       <Footer/>
-    </>
+    </div>
   );
 }
 

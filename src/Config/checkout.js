@@ -1,0 +1,3 @@
+export const DELIVERY_FEE = 20;
+export const MIN_ORDER_FOR_DELIVERY = 50; 
+export const SHOP_WHATSAPP_NUMBER = "27840272766";

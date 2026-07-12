@@ -28,7 +28,7 @@ export function CartReducer(state, action) {
             // if the item was not there, update the state by appending that item on to the state
             return {
                 ...state,
-                cartItems: [...state.cartItems, { ...item, quantity: 1 }]
+                cartItems: [...state.cartItems, { ...item}]
             }
         }
 
