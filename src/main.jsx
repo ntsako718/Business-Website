@@ -10,11 +10,11 @@ import { ProductsProvider } from './Context/ProductsContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ProductsProvider>
-      <BrowserRouter>
-        <CartProvider>
+      <CartProvider>
+        <BrowserRouter>
           <App />
-        </CartProvider>
-      </BrowserRouter>
+        </BrowserRouter>
+      </CartProvider>
     </ProductsProvider>
   </React.StrictMode>,
 )

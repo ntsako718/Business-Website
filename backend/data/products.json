@@ -4,139 +4,159 @@
     "name": "All-Purpose Cleaner",
     "tagline": "Multi-surface cleaning spray",
     "price": 59.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Take the hassle out of everyday cleaning with our powerful All-Purpose Cleaner. Designed to cut through grease, grime, fingerprints, and stubborn dirt, it's safe to use on countertops, appliances, tables, tiles, and most hard surfaces. Leaves every room sparkling clean with a fresh, long-lasting scent."
   },
   {
     "id": "p2",
     "name": "Dishwashing Liquid",
     "tagline": "Cuts through grease with ease",
     "price": 39.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Say goodbye to stubborn grease. Just a small squeeze creates a rich foam that effortlessly removes grease, baked-on food, and stains while remaining gentle on your hands. Enjoy spotless dishes and a refreshing citrus fragrance after every wash."
   },
   {
     "id": "p3",
     "name": "Laundry Detergent",
     "tagline": "Powerful stain removal",
     "price": 129.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Tough on stains yet gentle on fabrics, this concentrated detergent penetrates deep into fibres to lift dirt, remove odours, and restore brightness. Suitable for both machine and hand washing, keeping clothes fresh wash after wash."
   },
   {
     "id": "p4",
     "name": "Fabric Softener",
     "tagline": "Soft and fresh laundry",
     "price": 89.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Give your laundry the luxury treatment. This fabric softener leaves clothes irresistibly soft, reduces static, makes ironing easier, and delivers a clean fragrance that lasts for days."
   },
   {
     "id": "p5",
     "name": "Floor Cleaner",
     "tagline": "Shiny, streak-free floors",
     "price": 69.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Bring your floors back to life with a cleaner that removes dirt, footprints, and spills while leaving behind a brilliant streak-free shine. Safe for tiles, laminate, vinyl, and sealed wooden floors."
   },
   {
     "id": "p6",
     "name": "Glass Cleaner",
     "tagline": "Crystal-clear windows",
     "price": 49.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Achieve crystal-clear windows and mirrors in seconds. Our quick-drying formula removes fingerprints, smudges, dust, and water spots without leaving streaks behind."
   },
   {
     "id": "p7",
     "name": "Bathroom Cleaner",
     "tagline": "Removes soap scum and grime",
     "price": 64.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Eliminate soap scum, limescale, mould stains, and grime with ease. Ideal for sinks, showers, bathtubs, toilets, and tiles, leaving your bathroom hygienically clean and smelling fresh."
   },
   {
     "id": "p8",
     "name": "Toilet Cleaner",
     "tagline": "Deep cleaning gel",
     "price": 44.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "The thick cleaning gel clings to the toilet bowl, dissolving stains and killing germs above and below the waterline. Leaves your toilet sparkling clean with a fresh scent."
   },
   {
     "id": "p9",
     "name": "Disinfectant Spray",
     "tagline": "Kills 99.9% of germs",
     "price": 79.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Protect your family with a disinfectant spray that kills 99.9% of common household germs while removing unpleasant odours. Perfect for kitchens, bathrooms, door handles, and high-touch surfaces."
   },
   {
     "id": "p10",
     "name": "Bleach",
     "tagline": "Whitening and disinfecting",
     "price": 34.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "A trusted household essential for powerful whitening, stain removal, and disinfecting. Ideal for laundry, bathrooms, kitchens, and hard surfaces where deep hygiene matters."
   },
   {
     "id": "p11",
     "name": "Kitchen Degreaser",
     "tagline": "Cuts through tough grease",
     "price": 74.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Built for the toughest kitchen messes, this heavy-duty degreaser effortlessly cuts through baked-on grease, oil, and food residue on ovens, stovetops, extractor fans, and countertops."
   },
   {
     "id": "p12",
     "name": "Furniture Polish",
     "tagline": "Restores natural shine",
     "price": 59.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Restore the natural beauty of wooden furniture with a polish that cleans, shines, and protects in one application. Helps reduce dust build-up while leaving a smooth, polished finish."
   },
   {
     "id": "p13",
     "name": "Air Freshener",
     "tagline": "Long-lasting freshness",
     "price": 49.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Instantly transform any room with a burst of long-lasting freshness. Neutralizes unpleasant odours instead of simply masking them, leaving your home inviting all day long."
   },
   {
     "id": "p14",
     "name": "Microfiber Cloths",
     "tagline": "Reusable cleaning cloths",
     "price": 99.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Clean smarter with ultra-soft microfiber cloths that trap dust, absorb spills, and polish surfaces without scratching. Washable, reusable, and perfect for every room in your home."
   },
   {
     "id": "p15",
     "name": "Scrubbing Sponges",
     "tagline": "Tough on stains",
     "price": 29.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Featuring a soft absorbent side and a tough scrubbing layer, these sponges remove stubborn food residue and stains while protecting your cookware and dishes."
   },
   {
     "id": "p16",
     "name": "Cleaning Gloves",
     "tagline": "Protect your hands",
     "price": 39.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Keep your hands protected during every cleaning task. These durable, reusable gloves provide excellent grip and resist common household cleaning chemicals for maximum comfort."
   },
   {
     "id": "p17",
     "name": "Broom & Dustpan",
     "tagline": "Everyday sweeping set",
     "price": 149.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Make sweeping effortless with a durable broom featuring dense bristles that collect fine dust and larger debris. The matching dustpan ensures quick and easy clean-up around your home."
   },
   {
     "id": "p18",
     "name": "Mop & Bucket",
     "tagline": "Complete floor cleaning kit",
     "price": 249.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Everything you need for spotless floors in one convenient kit. Featuring a sturdy bucket and high-absorbency mop, it's perfect for tackling spills, dirt, and everyday messes."
   },
   {
     "id": "p19",
     "name": "Trash Bags",
     "tagline": "30-pack household bags",
     "price": 69.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Strong, reliable, and tear-resistant, these household trash bags are designed to handle everyday waste without leaks or breakages. Perfect for kitchens, offices, and outdoor bins."
   },
   {
     "id": "p20",
     "name": "Paper Towels",
     "tagline": "Highly absorbent rolls",
     "price": 54.99,
-    "imageUrl": "/images/clean.jpg"
+    "imageUrl": "/images/clean.jpg",
+    "description": "Ultra-absorbent paper towels that tackle spills, wipe surfaces, dry hands, and handle kitchen messes with ease. Durable enough for everyday cleaning while remaining soft to the touch."
   }
 ]

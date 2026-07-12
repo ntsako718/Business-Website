@@ -9,6 +9,8 @@
   --color-border: #E5E7EB;       /* Border Gray */
   --color-success-bg: #E8F5E9;   /* Success Green */
   --color-bg-subtle: #F7FBFF;    /* Very Light Blue */
+
+   --navbar-height: 4rem;
 }
 
 * {

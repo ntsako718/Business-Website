@@ -8,7 +8,6 @@ export default function Homepage(){
       <>
         <Hero/>
         <ProductGrid/>
-        <Footer/>
       </>
     );
 }

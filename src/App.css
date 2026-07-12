@@ -1,0 +1,8 @@
+.page-content {
+  padding-top: var(--navbar-height);
+}
+
+.hero-page {
+  padding-top: 0;
+  margin-top: calc(var(--navbar-height) * -0.5rem);
+}

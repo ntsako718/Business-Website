@@ -5,19 +5,22 @@ import Header from "./Layout/Header";
 import Homepage from "./Pages/Homepage";
 import Cart from './Pages/Cart';
 import ProductView from './Pages/ProductView';
+import './App.css'
+
 
 function App() {
   return (
     <>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<main><Homepage/></main>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        <Route path="/product/:id"
-         element = {<ProductView/>}
-         />
-      </Routes>
-      
+      <Header />
+      <div className="page-content">
+        <Routes>
+          <Route path="/" element={<main className='hero-page'><Homepage /></main>} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/product/:id" element={<ProductView />} />
+          <Route path="/products" element={<ProductGrid/>}/>
+        </Routes>
+      </div>
+      <Footer/>
     </>
   );
 }

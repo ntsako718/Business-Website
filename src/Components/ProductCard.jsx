@@ -1,7 +1,7 @@
 import React from "react";
 import "./CSS/ProductCard.css";
 import Button from "./UI/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const API_URL = import.meta.env.VITE_API_URL;
 

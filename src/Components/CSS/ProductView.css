@@ -1,33 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap");
+
 .product-view {
+  --ink-900: #1e1e22;
+  --ink-800: #383840;
+  --ink-600: #5a5a66;
+  --ink-400: #8a8a96;
+  --ink-100: #ececee;
+  --ink-50: #f6f6f7;
+  --accent: #2d6b5e;
+  --accent-50: #f0f7f5;
+  --warm-500: #c09a74;
+
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: var(--ink-800);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+/* Breadcrumb */
+
+.product-view__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-400);
+  margin-bottom: 28px;
+}
+
+.product-view__breadcrumb a {
+  color: var(--ink-400);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.product-view__breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.product-view__breadcrumb i {
+  font-size: 14px;
+  color: #d5d5da;
+}
+
+.product-view__breadcrumb span {
+  color: var(--ink-600);
+  font-weight: 500;
+}
+
+/* Layout */
+
+.product-view__layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 48px 24px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #1e1e22;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Image */
+
+.product-view__image-wrap {
+  position: relative;
 }
 
 .product-view__image {
+  aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f6f6f7;
-  border: 1px solid #ececee;
-  aspect-ratio: 1;
+  background: #fff;
+  border: 1px solid rgba(213, 213, 218, 0.5);
+  border-radius: 16px;
+  padding: 48px;
+  overflow: hidden;
 }
 
 .product-view__image img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 32px 64px rgba(30, 30, 34, 0.12))
+    drop-shadow(0 8px 20px rgba(30, 30, 34, 0.06));
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.product-view__image:hover img {
+  transform: scale(1.04);
+}
+
+.product-view__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ink-900);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.product-view__badge i {
+  font-size: 12px;
+  color: var(--warm-500);
+}
+
+/* Details */
+
 .product-view__details {
-  display: flex;
-  flex-direction: column;
   padding-top: 8px;
+}
+
+.product-view__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
 .product-view__brand {
@@ -35,30 +129,73 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #2d6b5e;
-  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.product-view__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #d5d5da;
+}
+
+.product-view__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-600);
+}
+
+.product-view__rating i {
+  color: var(--warm-500);
+  font-size: 14px;
+}
+
+.product-view__reviews {
+  color: var(--ink-400);
+  font-weight: 400;
 }
 
 .product-view__name {
-  font-size: 26px;
-  font-weight: 600;
-  margin: 0 0 12px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 34px;
+  line-height: 1.15;
   letter-spacing: -0.01em;
+  color: var(--ink-900);
+  margin: 0 0 14px;
 }
 
 .product-view__description {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
-  color: #6e6e7b;
-  max-width: 40ch;
+  color: var(--ink-600);
+  max-width: 42ch;
   margin: 0 0 24px;
 }
 
-.product-view__price {
-  font-size: 24px;
-  font-weight: 700;
+.product-view__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
   margin-bottom: 28px;
 }
+
+.product-view__price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink-900);
+  letter-spacing: -0.01em;
+}
+
+.product-view__price-original {
+  font-size: 16px;
+  color: var(--ink-400);
+  text-decoration: line-through;
+}
+
+/* Controls */
 
 .product-view__controls {
   display: flex;
@@ -68,51 +205,76 @@
 .product-view__stepper {
   display: flex;
   align-items: center;
-  border: 1px solid #d5d5da;
+  border: 1px solid var(--ink-100);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .product-view__stepper button {
-  width: 44px;
-  height: 48px;
+  width: 48px;
+  height: 52px;
   background: none;
   border: none;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-400);
   cursor: pointer;
-  color: #4a4a54;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .product-view__stepper button:hover {
-  background: #f6f6f7;
+  background: var(--ink-50);
+  color: var(--ink-800);
+}
+
+.product-view__stepper button:active {
+  transform: scale(0.9);
 }
 
 .product-view__stepper span {
-  width: 36px;
+  width: 40px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
+  color: var(--ink-900);
 }
 
 .product-view__add {
   flex: 1;
-  height: 48px;
-  background: #1e1e22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  background: var(--ink-900);
   color: #fff;
   border: none;
+  border-radius: 12px;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   cursor: pointer;
-  transition: opacity 0.15s ease;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.product-view__add i {
+  font-size: 16px;
 }
 
 .product-view__add:hover {
-  opacity: 0.85;
+  background: #2d2d34;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 32px rgba(30, 30, 34, 0.2), 0 4px 12px rgba(30, 30, 34, 0.1);
 }
 
-@media (max-width: 640px) {
-  .product-view {
+.product-view__add:active {
+  transform: translateY(0) scale(0.985);
+}
+
+@media (max-width: 720px) {
+  .product-view__layout {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
   }
 }

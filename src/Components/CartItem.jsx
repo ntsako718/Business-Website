@@ -6,19 +6,23 @@ export default function CartItem({ item }) {
   return (
     <div className="cart-item">
       <div className="cart-item__image">
-        <img src={item.img} alt={item.name} />
+        <img src={`http://localhost:3000${item.imageUrl}`} alt={item.name} />
       </div>
 
       <div className="cart-item__body">
         <div className="cart-item__top">
           <h2 className="cart-item__name">{item.name}</h2>
-          <i
-            className="bx bx-x cart-item__remove"
+          <span
+            className="cart-item__remove"
             onClick={() => dispatch({ type: "REMOVE_FROM_CART", payload: item.id })}
-          ></i>
+            role="button"
+            aria-label="Remove item"
+          >
+            ×
+          </span>
         </div>
 
-        <h1 className="cart-item__price">${item.price}</h1>
+        <h1 className="cart-item__price">R{item.price.toFixed(2)}</h1>
 
         <div className="cart-item__meta">
           {item.color && <span className="cart-item__tag">{item.color}</span>}
@@ -28,15 +32,19 @@ export default function CartItem({ item }) {
         <div className="cart-item__quantity">
           <span className="cart-item__quantity-label">Quantity</span>
           <div className="cart-item__stepper">
-            <i
-              className="bx bx-minus"
+            <button
               onClick={() => dispatch({ type: "DECREMENT", payload: item.id })}
-            ></i>
+              aria-label="Decrease quantity"
+            >
+              −
+            </button>
             <span>{item.quantity}</span>
-            <i
-              className="bx bx-plus"
+            <button
               onClick={() => dispatch({ type: "INCREMENT", payload: item.id })}
-            ></i>
+              aria-label="Increase quantity"
+            >
+              +
+            </button>
           </div>
         </div>
       </div>

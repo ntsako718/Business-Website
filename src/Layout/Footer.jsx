@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa6";
 
 import "./CSS/Footer.css";
+import {Link} from 'react-router-dom'
 
 const defaultColumns = [
   {
@@ -117,16 +118,16 @@ export default function Footer({
 
           <div className="sf-footer__socials">
             {socials.map(({ label, url, icon: Icon }) => (
-              <a
+              <Link
                 key={label}
-                href={url}
+                to={url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="sf-footer__social"
                 aria-label={label}
               >
                 <Icon size={18} />
-              </a>
+              </Link>
             ))}
           </div>
         </div>
